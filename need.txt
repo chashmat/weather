@@ -1,0 +1,11 @@
+what thigs i need:
+Google chart to create rain and temp chart
+which i can get form this link https://developers.google.com/chart/interactive/docs/gallery/linechart
+api of accu weather
+some of the models i have kept as txt files while some others are still left to browse from there site
+link: https://developer.accuweather.com/apis
+later i will add some if possible update:
+1. It will give u your last temps although you are offline by sevice worker which vedio i had saved in watch later
+2. U can search from google maps
+3. When u allow your location this will give you your city card
+4. Full registration and sign in functionnality

@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="container">
+        <path id="lower-side" d="M6 20.23L7.80459 22L18 12H14.3908L6 20.23Z" fill="#ffffff" />
+        <path id="upper-side" d="M6 3.77L7.80459 2L18 12H14.3908L6 3.77Z" fill="#e6e6e6" />
+    </g>
+</svg>

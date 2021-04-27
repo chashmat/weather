@@ -1,0 +1,432 @@
+got all this by this link:
+http://dataservice.accuweather.com/locations/v1/cities/search?apikey=URkMv8qNAL1ettx3XUnfAsjAafb3t8zS&q=Karachi&language=en-us&details=true
+
+[
+  {
+    "Version": 1,
+    "Key": "261158",
+    "Type": "City",
+    "Rank": 11,
+    "LocalizedName": "Karachi",
+    "EnglishName": "Karachi",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "ASI",
+      "LocalizedName": "Asia",
+      "EnglishName": "Asia"
+    },
+    "Country": {
+      "ID": "PK",
+      "LocalizedName": "Pakistan",
+      "EnglishName": "Pakistan"
+    },
+    "AdministrativeArea": {
+      "ID": "SD",
+      "LocalizedName": "Sindh",
+      "EnglishName": "Sindh",
+      "Level": 1,
+      "LocalizedType": "Province",
+      "EnglishType": "Province",
+      "CountryID": "PK"
+    },
+    "TimeZone": {
+      "Code": "PKT",
+      "Name": "Asia/Karachi",
+      "GmtOffset": 5,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": 24.89,
+      "Longitude": 67.029,
+      "Elevation": {
+        "Metric": {
+          "Value": 11,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 36,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [
+      {
+        "Level": 2,
+        "LocalizedName": "Karachi Central",
+        "EnglishName": "Karachi Central"
+      }
+    ],
+    "DataSets": [
+      "AirQualityCurrentConditions",
+      "AirQualityForecasts"
+    ],
+    "Details": {
+      "Key": "261158",
+      "StationCode": "OPKC",
+      "StationGmtOffset": 5,
+      "BandMap": "ASIA",
+      "Climo": "OPKC",
+      "LocalRadar": "",
+      "MediaRegion": null,
+      "Metar": "OPKC",
+      "NXMetro": "",
+      "NXState": "",
+      "Population": 13205339,
+      "PrimaryWarningCountyCode": "",
+      "PrimaryWarningZoneCode": "",
+      "Satellite": "MIDE",
+      "Synoptic": "41780",
+      "MarineStation": "",
+      "MarineStationGMTOffset": null,
+      "VideoCode": "",
+      "LocationStem": "pk/karachi/261158",
+      "PartnerID": null,
+      "Sources": [
+        {
+          "DataType": "AirQualityCurrentConditions",
+          "Source": "Plume Labs",
+          "SourceId": 63,
+          "PartnerSourceUrl": "https://air.plumelabs.com/air-quality-in-karachi-4VDy"
+        },
+        {
+          "DataType": "AirQualityForecasts",
+          "Source": "Plume Labs",
+          "SourceId": 63,
+          "PartnerSourceUrl": "https://air.plumelabs.com/air-quality-in-karachi-4VDy"
+        },
+        {
+          "DataType": "CurrentConditions",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "DailyForecast",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "HourlyForecast",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        }
+      ],
+      "CanonicalPostalCode": "",
+      "CanonicalLocationKey": "261158"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "603197",
+    "Type": "City",
+    "Rank": 85,
+    "LocalizedName": "Karachi",
+    "EnglishName": "Karachi",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "ASI",
+      "LocalizedName": "Asia",
+      "EnglishName": "Asia"
+    },
+    "Country": {
+      "ID": "RU",
+      "LocalizedName": "Russia",
+      "EnglishName": "Russia"
+    },
+    "AdministrativeArea": {
+      "ID": "KIR",
+      "LocalizedName": "Kirov",
+      "EnglishName": "Kirov",
+      "Level": 1,
+      "LocalizedType": "Republic",
+      "EnglishType": "Republic",
+      "CountryID": "RU"
+    },
+    "TimeZone": {
+      "Code": "MSK",
+      "Name": "Europe/Moscow",
+      "GmtOffset": 3,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": 57.854,
+      "Longitude": 49.56,
+      "Elevation": {
+        "Metric": {
+          "Value": 193,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 633,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [
+      {
+        "Level": 2,
+        "LocalizedName": "Nolinsky",
+        "EnglishName": "Nolinsky"
+      }
+    ],
+    "DataSets": [
+      "AirQualityCurrentConditions",
+      "AirQualityForecasts",
+      "Alerts",
+      "ForecastConfidence"
+    ],
+    "Details": {
+      "Key": "603197",
+      "StationCode": "RS0997",
+      "StationGmtOffset": 3,
+      "BandMap": "RS",
+      "Climo": "KIRX",
+      "LocalRadar": "",
+      "MediaRegion": null,
+      "Metar": "UWKD",
+      "NXMetro": "",
+      "NXState": "",
+      "Population": null,
+      "PrimaryWarningCountyCode": "",
+      "PrimaryWarningZoneCode": "",
+      "Satellite": "EURM",
+      "Synoptic": "27296",
+      "MarineStation": "",
+      "MarineStationGMTOffset": null,
+      "VideoCode": "",
+      "LocationStem": "ru/karachi/603197",
+      "PartnerID": null,
+      "Sources": [
+        {
+          "DataType": "AirQualityCurrentConditions",
+          "Source": "Plume Labs",
+          "SourceId": 63
+        },
+        {
+          "DataType": "AirQualityForecasts",
+          "Source": "Plume Labs",
+          "SourceId": 63
+        },
+        {
+          "DataType": "Alerts",
+          "Source": "Russian Federal Service for Hydrometeorology and Environmental Monitoring",
+          "SourceId": 65
+        },
+        {
+          "DataType": "CurrentConditions",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "DailyForecast",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "ForecastConfidence",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "HourlyForecast",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        }
+      ],
+      "CanonicalPostalCode": "",
+      "CanonicalLocationKey": "603197"
+    }
+  },
+  {
+    "Version": 1,
+    "Key": "1326466",
+    "Type": "City",
+    "Rank": 600,
+    "LocalizedName": "Karachi",
+    "EnglishName": "Karachi",
+    "PrimaryPostalCode": "",
+    "Region": {
+      "ID": "SAM",
+      "LocalizedName": "South America",
+      "EnglishName": "South America"
+    },
+    "Country": {
+      "ID": "BO",
+      "LocalizedName": "Bolivia",
+      "EnglishName": "Bolivia"
+    },
+    "AdministrativeArea": {
+      "ID": "H",
+      "LocalizedName": "Chuquisaca",
+      "EnglishName": "Chuquisaca",
+      "Level": 1,
+      "LocalizedType": "Department",
+      "EnglishType": "Department",
+      "CountryID": "BO"
+    },
+    "TimeZone": {
+      "Code": "BOT",
+      "Name": "America/La_Paz",
+      "GmtOffset": -4,
+      "IsDaylightSaving": false,
+      "NextOffsetChange": null
+    },
+    "GeoPosition": {
+      "Latitude": -20.4,
+      "Longitude": -64.767,
+      "Elevation": {
+        "Metric": {
+          "Value": 1863,
+          "Unit": "m",
+          "UnitType": 5
+        },
+        "Imperial": {
+          "Value": 6113,
+          "Unit": "ft",
+          "UnitType": 0
+        }
+      }
+    },
+    "IsAlias": false,
+    "SupplementalAdminAreas": [],
+    "DataSets": [
+      "AirQualityCurrentConditions",
+      "AirQualityForecasts",
+      "Radar"
+    ],
+    "Details": {
+      "Key": "1326466",
+      "StationCode": "BO0117",
+      "StationGmtOffset": -4,
+      "BandMap": "BO",
+      "Climo": "SLTJ",
+      "LocalRadar": "",
+      "MediaRegion": null,
+      "Metar": "SLTJ",
+      "NXMetro": "",
+      "NXState": "",
+      "Population": null,
+      "PrimaryWarningCountyCode": "",
+      "PrimaryWarningZoneCode": "",
+      "Satellite": "CSAM",
+      "Synoptic": "85312",
+      "MarineStation": "",
+      "MarineStationGMTOffset": null,
+      "VideoCode": "",
+      "LocationStem": "bo/karachi/1326466",
+      "PartnerID": null,
+      "Sources": [
+        {
+          "DataType": "AirQualityCurrentConditions",
+          "Source": "Plume Labs",
+          "SourceId": 63
+        },
+        {
+          "DataType": "AirQualityForecasts",
+          "Source": "Plume Labs",
+          "SourceId": 63
+        },
+        {
+          "DataType": "CurrentConditions",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "DailyForecast",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "HourlyForecast",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        },
+        {
+          "DataType": "Radar",
+          "Source": "AccuWeather",
+          "SourceId": 1
+        }
+      ],
+      "CanonicalPostalCode": "",
+      "CanonicalLocationKey": "1326466"
+    }
+  }
+]
+
+Parameter	                           Type	                         Description
+Version	                             int32	                       Version of the api.
+Key	                                 string	                       Location key.
+Type	                               string	                       Location type such as City, PostalCode, POI, or LatLong.
+Rank	                               int32	Number applied to locations, set by factors such as population, political importance, and geographic size.
+LocalizedName	                       string	Display name in local dialect set with language code in URL. Default is US English (en-us).
+EnglishName	                         string	Location name displayed in English.
+PrimaryPostalCode	                   string	Official postal code provided by our main location data provider for the requested location.
+Region.ID	                           string	Unique region code for the location.
+Region.LocalizedName	               string	Region name displayed in the local dialect set with the language code in the URL. Default is US English (en-us).
+Region.EnglishName	                 string	Region name displayed in English.
+Country.ID	                         string	Unique ISO or Microsoft Localization Code for the country.
+Country.LocalizedName	               string	Country name as displayed in the local dialect set with language code in the URL. Default is US English (en-us).
+Country.EnglishName	                 string	Country name displayed in English.
+AdministrativeArea.ID	               string	Unique Administrative Area ID for the Location.
+AdministrativeArea.LocalizedName	   string	Administrative Area name displayed in the local dialect set with the language code in the URL. Default is US English (en-us).
+AdministrativeArea.EnglishName	     string	Administrative Area name displayed in English.
+AdministrativeArea.Level	           int32	An assigned number, describing the scale of the administrative subdivisions for countries. As the Level number increases, the scale of the subdivision will decrease. Numbers of 10 or greater are reserved for non-political boundaries and should be used independently. May be NULL.
+AdministrativeArea.LocalizedType	   string	Administrative Area type displayed in the local dialect set with the language code in the URL. Default is US English (en-us).
+AdministrativeArea.EnglishType	     string	Administrative Area type displayed in English.
+AdministrativeArea.CountryID	       string	Unique ISO or Microsoft Localization Code for the country that contains the AdministrativeArea.
+TimeZone.Code	                       string	Official abbreviation code for designated Time Zone.
+TimeZone.Name	                       string	Official name of designated Time Zone.
+TimeZone.GmtOffset	                 float	Number of hours offset from local GMT time.
+TimeZone.IsDaylightSaving	           boolean	Is the location currently observing Daylight Saving time.
+TimeZone.NextOffsetChange	           date-time	Next time that daylight saving time changes. May be NULL.
+GeoPosition.Latitude	               double	Geographical coordinate that specifies the north-south position of a point on the earth`s surface.
+GeoPosition.Longitude	               double	Geographical coordinate that specifies the east-west position of a point on the earth`s surface.
+GeoPosition.Elevation.Metric.Value	 double	Rounded value in specified units. May be NULL.
+GeoPosition.Elevation.Metric.Unit	   string	Type of unit.
+GeoPosition.Elevation.Metric.UnitType	int32	Numeric ID associated with the type of unit being displayed.
+GeoPosition.Elevation.Imperial.Value	double	Rounded value in specified units. May be NULL.
+GeoPosition.Elevation.Imperial.Unit	  string	Type of unit.
+GeoPosition.Elevation.Imperial.UnitType	int32	Numeric ID associated with the type of unit being displayed.
+IsAlias	                               boolean	"True" or "False" verification of whether a location is an "alias" or an alternative name or spelling for a requested location.
+ParentCity	                           string	This object will be displayed only if the location is part of a larger metropolitan area or parent city.
+ParentCity.Key	                       string	Parent city location key.
+ParentCity.LocalizedName	             string	Parent city name as displayed in local dialect set with language code in the URL. If no language code is selected, the default is English.
+ParentCity.EnglishName	               string	Parent city name displayed in English.
+SupplementalAdminAreas.Level	         int32	An assigned number, describing the scale of the administrative subdivisions for countries. As the Level number increases, the scale of the subdivision will decrease. Numbers of 10 or greater are reserved for non-political boundaries and should be used independently. May be NULL.
+SupplementalAdminAreas.LocalizedName	 string	Administrative Area name as displayed in local dialect set with language code in the URL. Default is US English (en-us).
+SupplementalAdminAreas.EnglishName	   string	Administrative Area name displayed in English.
+DataSets	                             string	Array of location-specific products that are available for this location. Products include Alerts, PremiumAirQuality, AirQuality, MinuteCast, and ForecastConfidence. If no location-specific products are available, the array will be empty.
+Details.Key	                           string	Location key.
+Details.StationCode	                   string	Weather station code of the location.
+Details.StationGmtOffset	             float	GMT offset of the weather station. May be NULL.
+Details.BandMap	                       string	Temperature and precipitation band map code.
+Details.Climo	                         string	Source of the climatology data for the location.
+Details.LocalRadar	                   string	Local radar code associated with the location.
+Details.MediaRegion	                   string	Media region associated with the location.
+Details.Metar	                         string	Metar station associated with the location.
+Details.NXMetro	                       string	City level radar code.
+Details.NXState	                       string	State Level radar code.
+Details.Population	                   int64	Reported population of the location. May be NULL.
+Details.PrimaryWarningCountyCode	     string	Primary warning county code.
+Details.PrimaryWarningZoneCode	       string	Primary warning zone code.
+Details.Satellite	                     string	Satellite associated with the location.
+Details.Synoptic	                     string	Synoptic station associated with the location.
+Details.MarineStation	                 string	Marine station code.
+Details.MarineStationGMTOffset	       float	GMT offset of the marine station. May be NULL.
+Details.VideoCode	                     string	Code that identifies city or region for video.
+Details.PartnerID	                     int32	Unique number that indentifies a display partner for the Designated Marketing Area (DMA). Language dependent. May be NULL.
+Details.DMA.ID	                       string	Numeric Designated Marketing Area (DMA) identifier.
+Details.DMA.EnglishName	               string	Name of the DMA in English.
+Details.Sources.DataType	             string	Type of data the source provides.
+Details.Sources.Source	               string	Name of the data provider.
+Details.Sources.SourceId	             int32	ID associated with the source. Can be used as a key.
+Details.CanonicalPostalCode	           string	Optimized postal code, which may be the postal code of the location or a nearby metropolitan area. May be empty.
+Details.CanonicalLocationKey	         string	Optimized locationKey, which may be the locationKey of the location or a nearby metropolitan area. May be empty.
+Details.LocationStem	                 string	Country ID/location name/postal code or Country ID/location name/Location Key when the location does not have a postal code. For AccuWeather internal use only.

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☁Weather</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <div class="city-country-name" title="Karachi, Pakistan">Karachi, PK</div>
+                <div class="date">Wed, April 14</div>
+                <div class="time">8:30 pm</div>
+                <div class="temp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="sunny">
+                        <use href="#sun"></use>
+                    </svg>
+                    <div class="current-temp">31°C</div>
+                    <aside>
+                        <div class="high-temp">31</div>
+                        <div class="low-temp">28</div>
+                    </aside>
+                </div>
+                <div class="wether-txt">Mostly Sunny</div>
+                <div class="details">
+                    <div>
+                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="thermometer">
+                            <use href="#thermometer-box"></use>
+                        </svg>
+                        <div class="real-feel">
+                            Real Feel
+                            <br>
+                            31°C
+                        </div>
+                    </div>
+                    <div>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="raindrops" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="rain-drops">
+                            <use href="#rain-drops"></use>
+                        </svg>
+                        <div class="rain-chances">
+                            Rain Chances
+                            <br>
+                            0%
+                        </div>
+                    </div>
+                    <div>
+                        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="uvindex">
+                            <use href="#uv-index"></use>
+                        </svg>
+                        <div class="uv-index">
+                            UV Index
+                            <br>
+                            low
+                        </div>
+                    </div>
+                    <div class="sunrise">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="sun-rise"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="#sunrise"></use>
+                        </svg>
+                        <div class="sunrise">
+                            Sun Rise
+                            <br>
+                            6:30am
+                        </div>
+                    </div>
+                </div>
+                <div class="temp"></div>
+                <div class="rain"></div>
+                <div class="bottom-line">
+                    <div class="his-for-con"></div>
+                    <div class="re">
+                        <span class="material-icons">
+                            refresh
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-con">
+            <div class="arrow-left">
+                <div class="circle">
+                    <img src="./assets/arrows/arrow-left.svg" alt="<" class="left">
+                    <div class="circle-shadow"></div>
+                </div>
+            </div>
+            <div class="arrow-right">
+                <div class="circle">
+                    <img src="./assets/arrows/arrow-right.svg" alt=">" class="right">
+                    <div class="circle-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- svgs -->
+    <!-- sunny -->
+    <svg>
+        <symbol id="sun">
+            <g>
+                <path id="Vector"
+                    d="M12 9C13.65 9 15 10.35 15 12C15 13.65 13.65 15 12 15C10.35 15 9 13.65 9 12C9 10.35 10.35 9 12 9ZM12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7ZM2 13H4C4.55 13 5 12.55 5 12C5 11.45 4.55 11 4 11H2C1.45 11 1 11.45 1 12C1 12.55 1.45 13 2 13ZM20 13H22C22.55 13 23 12.55 23 12C23 11.45 22.55 11 22 11H20C19.45 11 19 11.45 19 12C19 12.55 19.45 13 20 13ZM11 2V4C11 4.55 11.45 5 12 5C12.55 5 13 4.55 13 4V2C13 1.45 12.55 1 12 1C11.45 1 11 1.45 11 2ZM11 20V22C11 22.55 11.45 23 12 23C12.55 23 13 22.55 13 22V20C13 19.45 12.55 19 12 19C11.45 19 11 19.45 11 20ZM5.99 4.58C5.6 4.19 4.96 4.19 4.58 4.58C4.19 4.97 4.19 5.61 4.58 5.99L5.64 7.05C6.03 7.44 6.67 7.44 7.05 7.05C7.43 6.66 7.44 6.02 7.05 5.64L5.99 4.58ZM18.36 16.95C17.97 16.56 17.33 16.56 16.95 16.95C16.56 17.34 16.56 17.98 16.95 18.36L18.01 19.42C18.4 19.81 19.04 19.81 19.42 19.42C19.81 19.03 19.81 18.39 19.42 18.01L18.36 16.95ZM19.42 5.99C19.81 5.6 19.81 4.96 19.42 4.58C19.03 4.19 18.39 4.19 18.01 4.58L16.95 5.64C16.56 6.03 16.56 6.67 16.95 7.05C17.34 7.43 17.98 7.44 18.36 7.05L19.42 5.99ZM7.05 18.36C7.44 17.97 7.44 17.33 7.05 16.95C6.66 16.56 6.02 16.56 5.64 16.95L4.58 18.01C4.19 18.4 4.19 19.04 4.58 19.42C4.97 19.8 5.61 19.81 5.99 19.42L7.05 18.36Z"
+                    fill="white" />
+            </g>
+        </symbol>
+    </svg>
+    <!-- thermometer -->
+    <svg>
+        <symbol id="thermometer-box">
+            <g id="thermometer">
+                <g id="bottom">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="22" y="46" width="26" height="21">
+                        <g id="path 1 inside 1">
+                            <path id="Vector"
+                                d="M45.9261 46.9559C47.1935 48.9217 47.907 51.193 47.9915 53.5304C48.076 55.8678 47.5283 58.1847 46.4062 60.2368C45.2841 62.289 43.6291 64.0004 41.6157 65.1907C39.6023 66.381 37.3051 67.006 34.9662 67C32.6273 66.9939 30.3333 66.3569 28.3262 65.1562C26.319 63.9554 24.6729 62.2354 23.5615 60.1774C22.4501 58.1195 21.9145 55.7997 22.0111 53.4628C22.1077 51.1259 22.8331 48.8583 24.1106 46.8992L35 54L45.9261 46.9559Z"
+                                fill="white" />
+                        </g>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path id="Vector_2"
+                            d="M45.9261 46.9559C47.1935 48.9217 47.907 51.193 47.9915 53.5304C48.076 55.8678 47.5283 58.1847 46.4062 60.2368C45.2841 62.289 43.6291 64.0004 41.6157 65.1907C39.6023 66.381 37.3051 67.006 34.9662 67C32.6273 66.9939 30.3333 66.3569 28.3262 65.1562C26.319 63.9554 24.6729 62.2354 23.5615 60.1774C22.4501 58.1195 21.9145 55.7997 22.0111 53.4628C22.1077 51.1259 22.8331 48.8583 24.1106 46.8992L35 54L45.9261 46.9559Z"
+                            stroke="white" stroke-width="2" />
+                    </g>
+                </g>
+                <path id="capsule" d="M24.5 48.5V10.5C29.8123 0.277292 41.8707 3.06878 45.5 10.5V48.5" stroke="white" />
+                <g id="reading">
+                    <path id="8" d="M39 12H45" stroke="white" />
+                    <path id="7" d="M39 16H45" stroke="white" />
+                    <path id="6" d="M39 20H45" stroke="white" />
+                    <path id="5" d="M39 24H45" stroke="white" />
+                    <path id="4" d="M39 28H45" stroke="white" />
+                    <path id="3" d="M39 32H45" stroke="white" />
+                    <path id="2" d="M39 36H45" stroke="white" />
+                    <path id="1" d="M39 40H45" stroke="white" />
+                </g>
+                <path id="mercury circle"
+                    d="M35 59C37.7614 59 40 56.7614 40 54C40 51.2386 37.7614 49 35 49C32.2386 49 30 51.2386 30 54C30 56.7614 32.2386 59 35 59Z"
+                    fill="white" />
+                <g id="mercury">
+                    <path d="M35,50 L35,20" stroke="white" />
+                </g>
+            </g>
+        </symbol>
+    </svg>
+    <!-- rain -->
+    <svg>
+        <symbol id="rain-drops">
+            <path fill="white"
+                d="M406.6 252.7c-18.4-25.7-39.2-55-52.6-99.4-4.3-15-17.8-25.1-33.6-25.3-14.4-.3-29.6 10-34.2 25.2-13.4 44.3-34.2 73.6-52.6 99.5-21.3 30-41.5 58.4-41.5 100 0 70.2 57.4 127.3 128 127.3s128-57.1 128-127.3c-.1-41.8-20.2-70.1-41.5-100zM320 448c-52.9 0-96-42.7-96-95.3 0-31.4 15.7-53.5 35.6-81.5 18.8-26.5 42.2-59.4 57.1-108.7.2-.8.8-2.5 3.2-2.5 1.3.5 2.8.7 3.2 2.1l.1.3c15 49.5 38.4 82.4 57.2 108.8 20.6 28.9 35.5 49.8 35.5 81.4.1 52.7-43 95.4-95.9 95.4zm-80-306.1c0-21.4-9.8-35.8-19.2-49.8-7.9-11.6-16-23.6-21.4-42.2-2.9-10.6-12.2-17.8-23.1-17.9-12.4-.1-20.5 7-23.6 17.8-5.3 18.6-13.5 30.7-21.4 42.3-9.5 14-19.3 28.5-19.3 49.8 0 36.4 28.7 66.1 64 66.1s64-29.7 64-66.1zM176 176c-17.7 0-32-15.3-32-34.1 0-11 4.7-18.5 13.8-31.9 5.7-8.5 12.4-18.3 18.2-31.2 5.8 12.9 12.5 22.8 18.3 31.2 9 13.3 13.7 20.7 13.7 31.8 0 18.9-14.3 34.2-32 34.2zm-88.6 49.9c-2.9-10.6-12.2-17.8-23.1-17.9-10.1 1.2-20.5 7-23.6 17.8-5.3 18.6-13.5 30.7-21.4 42.3C9.8 282.1 0 296.6 0 317.9 0 354.3 28.7 384 64 384s64-29.7 64-66.1c0-21.4-9.8-35.8-19.2-49.8-7.9-11.6-16-23.6-21.4-42.2zM64 352c-17.7 0-32-15.3-32-34.1 0-11 4.7-18.5 13.8-31.9 5.7-8.5 12.4-18.3 18.2-31.2 5.8 12.9 12.5 22.8 18.3 31.2 9 13.3 13.7 20.7 13.7 31.8 0 18.9-14.3 34.2-32 34.2z"
+                class="rain"></path>
+        </symbol>
+    </svg>
+    <!-- uv index -->
+    <svg>
+        <symbol id="uv-index">
+            <g clip-path="url(#clip0)">
+                <path
+                    d="M49.6672 25.6256C52.9491 28.9075 54.7929 33.3587 54.7929 38C54.7929 42.6413 52.9491 47.0925 49.6672 50.3744C46.3853 53.6563 41.9342 55.5 37.2929 55.5C32.6516 55.5 28.2004 53.6563 24.9185 50.3744L37.2929 38L49.6672 25.6256Z"
+                    fill="#808080" />
+                <path
+                    d="M24.9185 50.3744C21.6366 47.0925 19.7929 42.6413 19.7929 38C19.7929 33.3587 21.6366 28.9075 24.9185 25.6256C28.2004 22.3437 32.6516 20.5 37.2929 20.5C41.9342 20.5 46.3854 22.3437 49.6673 25.6256L37.2929 38L24.9185 50.3744Z"
+                    fill="white" />
+                <line x1="23.681" y1="24.0346" x2="13.0744" y2="13.428" stroke="white" stroke-width="1.5" />
+                <line x1="37.6789" y1="17.2157" x2="37.6789" y2="2.21573" stroke="white" stroke-width="1.5" />
+                <line x1="39.0931" y1="72.3701" x2="39.0931" y2="57.3701" stroke="#808080" stroke-width="1.5" />
+                <line x1="1.23044" y1="38.6642" x2="16.2304" y2="38.6642" stroke="white" stroke-width="1.5" />
+                <line x1="57.0919" y1="37.9571" x2="72.0919" y2="37.9571" stroke="#808080" stroke-width="1.5" />
+                <line x1="51.1698" y1="22.8856" x2="61.7764" y2="12.279" stroke="white" stroke-width="0.75" />
+                <line x1="51.7002" y1="23.4159" x2="62.3068" y2="12.8093" stroke="#808080" stroke-width="0.75" />
+                <line x1="12.279" y1="61.7765" x2="22.8856" y2="51.1699" stroke="white" stroke-width="0.75" />
+                <line x1="12.8093" y1="62.3068" x2="23.4159" y2="51.7002" stroke="#808080" stroke-width="0.75" />
+                <line x1="62.572" y1="62.9255" x2="51.9654" y2="52.3189" stroke="#808080" stroke-width="1.5" />
+            </g>
+            <defs>
+                <clipPath id="clip0">
+                    <rect width="75" height="75" fill="white" />
+                </clipPath>
+            </defs>
+        </symbol>
+    </svg>
+    <!-- sun rise -->
+    <svg>
+        <symbol id="sunrise">
+            <g id="sun-rise">
+                <g id="Ellipse 1">
+                    <mask id="path-1-inside-1" fill="white">
+                        <path
+                            d="M17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12L12 12H17Z" />
+                    </mask>
+                    <path
+                        d="M17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12L12 12H17Z"
+                        stroke="white" stroke-width="2" mask="url(#path-1-inside-1)" />
+                </g>
+                <line id="Line 1" x1="12" y1="2" x2="12" y2="6" stroke="white" />
+                <line id="Line 2" x1="15.6464" y1="7.47487" x2="18.4749" y2="4.64645" stroke="white" />
+                <line id="Line 6" x1="5.35355" y1="4.64645" x2="8.18198" y2="7.47487" stroke="white" />
+                <line id="Line 3" x1="18" y1="11.5" x2="22" y2="11.5" stroke="white" />
+                <line id="Line 5" x1="2" y1="11.5" x2="6" y2="11.5" stroke="white" />
+                <line id="Line 7" x1="2" y1="13.5" x2="13" y2="13.5" stroke="white" />
+                <line id="Line 8" x1="15" y1="13.5" x2="20" y2="13.5" stroke="white" />
+                <line id="Line 9" x1="1" y1="15.5" x2="9" y2="15.5" stroke="white" />
+                <line id="Line 10" x1="10" y1="15.5" x2="15" y2="15.5" stroke="white" />
+                <line id="Line 11" x1="17" y1="15.5" x2="24" y2="15.5" stroke="white" />
+                <line id="Line 12" y1="17.5" x2="12" y2="17.5" stroke="white" />
+                <line id="Line 13" x1="14" y1="17.5" x2="23" y2="17.5" stroke="white" />
+                <line id="Line 14" x1="15" y1="19.5" x2="23" y2="19.5" stroke="white" />
+                <line id="Line 16" x1="8" y1="19.5" x2="13" y2="19.5" stroke="white" />
+                <line id="Line 15" x1="1" y1="19.5" x2="7" y2="19.5" stroke="white" />
+            </g>
+        </symbol>
+    </svg>
+    <script src="./script.js"></script>
+</body>
+
+</html>
