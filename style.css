@@ -35,7 +35,7 @@ body {
 
 .container .card {
 	background: linear-gradient(180deg, #0000004d, #00000099),
-		url(./assets/bg.jpg);
+		url(./assets/bg.png);
 	background-position: center;
 	background-size: cover;
 	height: 90%;
@@ -48,6 +48,10 @@ body {
 	box-shadow: 6px 9px 10px 2px #0c0c0cd9;
 	position: relative;
 	text-shadow: 6px 6px 10px #0c0c0cd9;
+}
+
+.card .upper {
+	height: 53%;
 }
 
 .small {
@@ -136,13 +140,24 @@ body {
 }
 
 .arrow-con {
-	position: absolute;
+	position: relative;
 	height: 100vh;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.arrow-con > * {
+	position: absolute;
+	z-index: 1000;
+}
+
+.arrow-con .arrow-right {
+	right: 10px;
 }
 
 .circle {
@@ -186,8 +201,25 @@ body {
 	left: 1px;
 }
 
+.graph {
+	height: 42.5%;
+	background: #fff;
+}
+
+.graph > * {
+	height: 50%;
+	width: 100%;
+}
+
+.graph .temp {
+	background: #670e1c;
+}
+.graph .rain {
+	background: #862620;
+}
+
 .bottom-line {
-	height: 30px;
+	height: 4.5%;
 	width: 100%;
 	box-shadow: 0px 0px 20px 0px black;
 	position: absolute;
@@ -199,12 +231,50 @@ body {
 
 .his-for-con {
 	width: 80%;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.his-for-con input[type='checkbox'] {
+	position: relative;
+	width: 45px;
+	height: 70%;
+	margin: 0px 10px;
+	-webkit-appearance: none;
+	background: #191919;
+	outline: none;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 5px 0px #0000004d;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.his-for-con input:checked[type='checkbox'] {
+	background: #862620;
+}
+
+.his-for-con input[type='checkbox']:before {
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 100%;
+	border-radius: 50px;
+	top: 0px;
+	left: 0px;
+	transform: scale(1.1);
+	background: #cab5a8;
+	transition: all 0.5s ease-in-out;
+}
+
+.his-for-con input:checked[type='checkbox']:before {
+	transform: translateX(115%) scale(1.1);
 }
 
 .re {
 	width: 20%;
 	cursor: pointer;
-	transition: all 0.25s ease;
 }
 
 .re:active {
@@ -213,4 +283,5 @@ body {
 
 .re:active span {
 	transform: scale(0.92);
+	transition: all 0.05s ease;
 }

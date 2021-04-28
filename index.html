@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="☁ Check your favourite cities live Weather">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/favicon.ico">
-    <meta property="og:url" content="https://chashmat.github.io/weather/">
     <title>☁Weather</title>
+    <meta name="description" content="Check your fovourite cities live weather ☁🌡 today by clicking the link.">
+    <meta property="og:url" content="https://chashmat.github.io/weather/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="☁🌡Weather Web App">
+    <meta property="og:description" content="Check your fovourite cities live weather ☁🌡 today by clicking the link.">
+    <meta property="og:image" content="./assets/bg.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="986">
+    <meta property="og:image:height" content="860">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,70 +24,78 @@
     <div class="container">
         <div class="wrapper">
             <div class="card">
-                <div class="city-country-name" title="Karachi, Pakistan">Karachi, PK</div>
-                <div class="date">Wed, April 14</div>
-                <div class="time">8:30 pm</div>
-                <div class="temp">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="sunny">
-                        <use href="#sun"></use>
-                    </svg>
-                    <div class="current-temp">31°C</div>
-                    <aside>
-                        <div class="high-temp">31</div>
-                        <div class="low-temp">28</div>
-                    </aside>
-                </div>
-                <div class="wether-txt">Mostly Sunny</div>
-                <div class="details">
-                    <div>
-                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="thermometer">
-                            <use href="#thermometer-box"></use>
+                <div class="upper">
+                    <div class="city-country-name" title="Karachi, Pakistan">Karachi, PK</div>
+                    <div class="date">Wed, April 14</div>
+                    <div class="time">8:30 pm</div>
+                    <div class="temp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="sunny">
+                            <use href="#sun"></use>
                         </svg>
-                        <div class="real-feel">
-                            Real Feel
-                            <br>
-                            31°C
-                        </div>
+                        <div class="current-temp">31°C</div>
+                        <aside>
+                            <div class="high-temp">31</div>
+                            <div class="low-temp">28</div>
+                        </aside>
                     </div>
-                    <div>
-                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="raindrops" role="img"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="rain-drops">
-                            <use href="#rain-drops"></use>
-                        </svg>
-                        <div class="rain-chances">
-                            Rain Chances
-                            <br>
-                            0%
+                    <div class="wether-txt">Mostly Sunny</div>
+                    <div class="details">
+                        <div>
+                            <svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="thermometer">
+                                <use href="#thermometer-box"></use>
+                            </svg>
+                            <div class="real-feel">
+                                Real Feel
+                                <br>
+                                31°C
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            id="uvindex">
-                            <use href="#uv-index"></use>
-                        </svg>
-                        <div class="uv-index">
-                            UV Index
-                            <br>
-                            low
+                        <div>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="raindrops" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="rain-drops">
+                                <use href="#rain-drops"></use>
+                            </svg>
+                            <div class="rain-chances">
+                                Rain Chances
+                                <br>
+                                0%
+                            </div>
                         </div>
-                    </div>
-                    <div class="sunrise">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="sun-rise"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <use href="#sunrise"></use>
-                        </svg>
+                        <div>
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" id="uvindex">
+                                <use href="#uv-index"></use>
+                            </svg>
+                            <div class="uv-index">
+                                UV Index
+                                <br>
+                                low
+                            </div>
+                        </div>
                         <div class="sunrise">
-                            Sun Rise
-                            <br>
-                            6:30am
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="sun-rise"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="#sunrise"></use>
+                            </svg>
+                            <div class="sunrise">
+                                Sun Rise
+                                <br>
+                                6:30am
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="temp"></div>
-                <div class="rain"></div>
+                <div class="graph">
+                    <div class="temp"></div>
+                    <div class="rain"></div>
+                </div>
                 <div class="bottom-line">
-                    <div class="his-for-con"></div>
+                    <div class="his-for-con">
+                        Historic
+                        <input type="checkbox">
+                        Forcast
+                    </div>
                     <div class="re">
                         <span class="material-icons">
                             refresh
@@ -222,7 +235,7 @@
             </g>
         </symbol>
     </svg>
-    <script src="./script.js"></script>
+    <script src="./js/script.js" async></script>
 </body>
 
 </html>
